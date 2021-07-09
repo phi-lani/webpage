@@ -1,0 +1,111 @@
+:root{
+	--mainColor: #eaeaea;
+	--secondaryColor: #fff;
+
+	--borderColor:#c1c1c1;
+}
+
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	justify-content: center;
+	font:Playfair Display;
+}
+
+.s1{
+	background-color: var(--mainColor);
+	border-bottom:1px dashed var(--borderColor) ;
+}
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom:1px dashed var(--borderColor);
+}
+
+.main-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-bar{
+	display: grid;
+	/* border: 2px dashed red; */
+	min-height: 5em;
+	align-content: center;
+	background-color:var(--secondaryColor);
+}
+
+.nav-logo{
+	height: 4em;
+	border-radius: 10em;
+}
+
+.landing-page{
+	display: grid;
+	/* border: 2px dashed rebeccapurple; */
+	min-height: 37em;
+	align-content: center;
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)),url(./imgs/centered.PNG);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color:var(--secondaryColor);
+	z-index: 1;
+}
+
+.box {
+	height: 150px;
+	color: var(--secondaryColor);
+	border: 5px solid white;
+	position: relative;
+}
+
+.coming-soon{
+	color: white;
+	z-index: 40;
+	line-height: 0em;
+}
+
+.coming-soon h1 {
+	font-size:5em;
+}
+
+.footer {
+	display: grid;
+	/* border: 1px dashed red; */
+	justify-content: center;
+	align-content: center;
+	height: 5em;
+}
+
+.message{
+	display: grid;
+	/* border: 1px dashed red; */
+	height: 20em;
+	justify-content: center;
+	align-content: center;
+}
+
+.message h3{
+	line-height: 0em;
+	/* display: grid; */
+	/* border: 1px dashed red; */
+} 
+@media  screen and (max-width: 1200px) {
+	.main-container {
+		width: 95%;
+	}
+
+	.coming-soon h1 {
+		font-size:3em;
+	}
+}
+
+a{
+	text-decoration: none;
+}
