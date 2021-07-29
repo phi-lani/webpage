@@ -5,23 +5,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ImPaid | Welcome</title>
-	<link rel="stylesheet" type="text/css" href="./index.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+
 </head>
 <body>
 	<section class="s1">
+		
+
+
 		<div class="main-container">
 			<div class="nav-bar">
 				<a href="index.html">
 					<img src="./imgs/paidLogo.PNG" class="nav-logo" alt="paidLogo">
 				</a>
+					<ul id="navigation">
+						<li>
+							<a href="#message">about us</a>
+						</li>
+						<li>
+							<a href="#contacts">contact us</a>
+						</li>
+					</ul>
 			</div>
 
+		
+
 			<div class="landing-page">
+				<div class="box1">
+					<div class="countdown">00 : 00 : 00 : 00</div>
+				</div>
 				<div class="box">
 					<div class="coming-soon">
 						<h1>Coming Soon</h1>
-						<h3>stay tuned...</h3>
+						<h3>Our website is under construction, follow us for updates now!</h3>
 					</div>
 				</div>
 			</div>
@@ -30,13 +49,40 @@
 
 	<section class="s2">
 		<div class="main-container">
-			<div class="message">
+			<div class="message" id="message">
 				<h1>You can't hurry perfection...</h1>
 				<h3>We're building something really awesome that is set to change the way we shop,</h3>
 				<h3>give and receive money, and plan our final lives</h3>
 			</div>
 		</div>
+	</section>
 
+	<section class="s1">
+		<div class="main-container">
+			<div class="contact-wrap" id="contacts">
+				<div class="contact-in">
+					<h1>Contact Info</h1>
+					 <div class="box-contacts">
+						<h2><i class="fa fa-envelope" aria-hidden="true"></i>Email <br> &nbsp; info@impaid.co.za</h2>	 
+					<ul>
+						<li><a href="http://fb.me/paidbyneotech" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.instagram.com/paid_af/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+				</div>
+				<div class="contact-in">
+					<h1>Send a Message</h1>
+					<form action=" https://formspree.io/f/xyyldqjq"  method="POST">
+						<input type="text" name="name" placeholder="Full Name" class="contact-in-input" required>  
+						<input type="text" name="email" name="_replyto" placeholder="Email" class="contact-in-input" required> 
+						<input type="text" name="subject" placeholder="Subject" class="contact-in-input" required>
+						<textarea name="message" placeholder="Message" class="contact-in-textarea" required></textarea>
+						<input type="submit" value="SUBMIT" class="contact-in-btn">
+					</form>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section class="s1">
@@ -47,6 +93,8 @@
 		</div>
 	</section>
 
+	&nbsp;
+<script src="./js/count.js"></script>
 
 </body>
 </html>
