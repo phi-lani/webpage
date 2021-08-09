@@ -55,6 +55,7 @@ li {
 .main-container {
 	width: 1200px;
 	margin: 0 auto;
+	/* background: url(../imgs/P-logo.jpeg); */
 }
 
 .nav-bar{
@@ -98,11 +99,21 @@ li {
 }
 
 .landing-page{
+	/* width: 1200px; */
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	height: 30em;
 	justify-content: center;
+	/* background:black; */
+	/* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(../imgs/P-round-logo.jpeg); */
+	/* background-repeat: no-repeat; */
+	/* background-size: 600px 600px; */
+	/* background-position: center center; */
+	/* background-attachment: fixed; */
+	/* background-position: 50%; */
+	/* border-radius: 100%; */
+	/* transform: translate(-50%, -50%); */
 }
 
 .box1{
@@ -116,7 +127,7 @@ li {
 	font-family: Ubuntu-Bold;
 	font-size: 5em;
 	font-weight: 400px;
-	color: white;
+	color:white;
 }
 
 .box {
@@ -124,7 +135,7 @@ li {
 }
 
 .coming-soon{
-	color: white;
+	color:white;
 	z-index: 40;
 	line-height: 0em;
 	display: grid;
